@@ -1,0 +1,121 @@
+.topResult{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.img{
+    width: 90px
+}
+
+.playBtn{
+      position: relative;
+      margin: 0;
+      top: -6em;
+      margin-left: 8rem;
+
+}
+
+.srchRes li{
+    display: inline-grid;
+    
+}
+
+
+
+.item{
+    display: flex;
+    flex-direction: row;
+}
+
+.player{
+     position: fixed;
+     bottom:0;
+}
+
+a  {
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+.toptitle{
+      position:absolute;
+      font-size: 17px;
+      text-align: center;
+      text-shadow: 2px 3px 6px  rgb(0, 0, 0);
+    }
+
+ 
+
+  
+.margin{
+    margin: 1rem;
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    width: 100%
+}
+
+.queueBtn{
+    position: fixed;
+  left: 3rem;
+  bottom: 1rem;
+    z-index: 1;
+}
+
+/* CSS for desktop layout */
+.newTrending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+  
+  .newTrending > .songs,
+  .newTrending > .albums {
+    flex: 1; 
+    max-width: 100%; 
+    text-align: center; 
+    padding: 10px;
+    display: flex; 
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+
+  @media screen and (max-width: 800px) {
+    .newTrending {
+      flex-direction: column; /* Switch to vertical arrangement */
+    }
+  
+    .newTrending > .songs,
+    .newTrending > .albums {
+      width: 1rem; 
+      overflow-x: auto; 
+    }
+  }
+  
+  /* CSS for mobile layout */
+  @media screen and (max-width: 480px) {
+    .newTrending > .songs,
+    .newTrending > .albums {
+      max-width: 100%; 
+      overflow-x: auto; 
+  }
+}
+
+#queueClearBtn{
+  position: absolute;
+  right: 2rem;
+  top: 4.7rem;
+    z-index: 1;
+}
+.queuelist{
+  z-index: -1;
+}
+.artistsName{
+  color: rgb(165, 162, 162);
+}
